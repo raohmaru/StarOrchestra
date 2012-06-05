@@ -1,0 +1,12 @@
+# Build and Release Folders
+arte/
+assets/
+bin-debug/
+bin-release/
+
+# Project property files
+.actionScriptProperties
+.flexLibProperties
+.settings/
+.project
+*.png

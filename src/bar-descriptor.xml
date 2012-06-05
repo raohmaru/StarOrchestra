@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qnx>
+  <author>Raul Parralejo Nieto</author>
+  <authorId>gYAAgCjbI4dNHUf0dzj2jtcOixs</authorId>
+  <category>core.games</category>
+  <buildId>3</buildId>
+  <action>play_audio</action>
+  <platformVersion>1.0.0.0</platformVersion>
+  <icon>
+  	<image>blackberry-tablet-icon.png</image>
+  </icon>
+  <splashscreen>splash_landscape.png</splashscreen>
+<permission>play_audio</permission>
+</qnx>

@@ -1,0 +1,1801 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<game>
+	<width>824</width>
+	<height>450</height>
+	<snap_dte>25</snap_dte>
+	<note_tempo>.5</note_tempo>
+	<error_time_substract>.5</error_time_substract>
+	<time_plus>1</time_plus>
+	<map_phis>100</map_phis>
+	<time_bonus>100</time_bonus>
+
+	<levels>
+		<!--
+		<level title="xxxx" tempo=".3" time_plus="2" star="yyyy" sound="zzzz" color="0xFFCC00">
+			<map cols="2" rows="2" width="300" height="300" title="yyyy" error="0" map_phis="200">
+				<message_start>
+					<title><![CDATA[xxxx]]></title>
+					<text><![CDATA[yyyy]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[xxxx]]></title>
+					<text><![CDATA[yyyy]]></text>
+				</message_end>
+				<sequence time="1" tempo=".1">
+					<note id="0" tempo=".3" follow="false"/>
+				</sequence>
+				<award>xxxx</award>
+			</map>
+		</level>
+		-->
+
+		<level title="Basic Geometry" star="STAR0" sound="Star0" color="0xFFCC00">
+			<map cols="2" rows="1" width="300" height="300" title="Line" error="0">
+				<message_start>
+					<title><![CDATA[level 1: basic geometry]]></title>
+					<text><![CDATA[<font color="#FFCC00">Welcome to Star Orchestra!</font><br>Follow the sequence joining the stars with your finger, drawing a light beam that will make the stars sing.]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[congratulations!]]></title>
+					<text><![CDATA[When you complete a song you gain points, called "phis". Try to get as much as you can!]]></text>
+				</message_end>
+				<sequence time="0">
+					<note id="0"/>
+					<note id="1"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="2" width="300" height="300" title="Diagonal" error="0">
+				<sequence time="0">
+					<note id="1"/>
+					<note id="2"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="2" width="300" height="300" title="Triangle" error="0">
+				<sequence time="0">
+					<note id="0"/>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="0"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="2" width="300" height="300" title="Square" error="0">
+				<sequence time="0">
+					<note id="1"/>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="0"/>
+					<note id="1"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="300" title="Rectangle" error="0">
+				<sequence time="0">
+					<note id="4"/>
+					<note id="5"/>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="400" height="300" title="Rhombus" error="0">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[If you are tired, you can always exit the game via the Tools menu, at the lower right corner of the screen.]]></text>
+				</message_start>
+				<sequence time="0">
+					<note id="1"/>
+					<note id="3"/>
+					<note id="7"/>
+					<note id="5"/>
+					<note id="1"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="400" height="300" title="Parallelogram" error="0">
+				<sequence time="0">
+					<note id="3"/>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="4"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="400" height="300" title="Pentagon" error="0">
+				<sequence time="0">
+					<note id="0"/>
+					<note id="3"/>
+					<note id="7"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="0"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="3" width="500" height="300" title="Trapezoid" error="0">
+				<sequence time="0">
+					<note id="5"/>
+					<note id="8"/>
+					<note id="9"/>
+					<note id="10"/>
+					<note id="11"/>
+					<note id="6"/>
+					<note id="5"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="3" width="500" height="350" title="Hexagon" error="0">
+				<message_end>
+					<title><![CDATA[first level complete!]]></title>
+					<text><![CDATA[Now you can <font color="#FFCC00">select played levels</font> in the main menu.]]></text>
+				</message_end>
+				<sequence time="0">
+					<note id="4"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="7"/>
+					<note id="10"/>
+					<note id="9"/>
+					<note id="4"/>
+				</sequence>
+				<award>selectLevel</award>
+			</map>
+		</level>
+		<level title="Advanced Geometry" star="STAR1" sound="Star1" color="0xF5D71B">
+			<map cols="3" rows="3" width="350" height="350" title="Cross" error="0">
+				<message_start>
+					<title><![CDATA[level 2: adv. geometry]]></title>
+					<text><![CDATA[You must complete the song within the time allotted. If you are fast enough, you will get extra phis!]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[well done!]]></title>
+					<text><![CDATA[You want to try the next one?]]></text>
+				</message_end>
+				<sequence>
+					<note id="1"/>
+					<note id="4"/>
+					<note id="7"/>
+					<note id="3" follow="false"/>
+					<note id="4"/>
+					<note id="5"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="Parallels" error="0">
+				<sequence>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="5" follow="false"/>
+					<note id="4"/>
+					<note id="3"/>
+					<note id="6" follow="false"/>
+					<note id="7"/>
+					<note id="8"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="4" width="500" height="350" title="Vectors" error="0">
+				<sequence>
+					<note id="2"/>
+					<note id="5"/>
+					<note id="8"/>
+					<note id="4" follow="false"/>
+					<note id="8"/>
+					<note id="9"/>
+					<note id="13" follow="false"/>
+					<note id="10"/>
+					<note id="7"/>
+					<note id="6" follow="false"/>
+					<note id="7"/>
+					<note id="11"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="4" width="375" height="350" title="Pentagram" error="0">
+				<sequence>
+					<note id="9"/>
+					<note id="1"/>
+					<note id="11"/>
+					<note id="3"/>
+					<note id="5"/>
+					<note id="9"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="4" width="400" height="400" title="Incal" error="0">
+				<sequence>
+					<note id="6"/>
+					<note id="1"/>
+					<note id="8"/>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="3" follow="false"/>
+					<note id="10"/>
+					<note id="5"/>
+					<note id="4"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="4" width="350" height="400" title="Cube" error="0">
+				<sequence>
+					<note id="5"/>
+					<note id="8"/>
+					<note id="10"/>
+					<note id="6"/>
+					<note id="3"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="7"/>
+					<note id="3"/>
+					<note id="7" follow="false"/>
+					<note id="10"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="300" height="300" title="Pyramid" error="0">
+				<sequence>
+					<note id="1"/>
+					<note id="6"/>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="8"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="3" width="600" height="300" title="Infinity" error="0">
+				<sequence>
+					<note id="13"/>
+					<note id="9"/>
+					<note id="3"/>
+					<note id="7"/>
+					<note id="11"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="7"/>
+					<note id="13"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="3" width="600" height="350" title="Tetrahedron Net" error="0">
+				<sequence>
+					<note id="6"/>
+					<note id="10"/>
+					<note id="11"/>
+					<note id="12"/>
+					<note id="13"/>
+					<note id="14"/>
+					<note id="8"/>
+					<note id="2"/>
+					<note id="6"/>
+					<note id="12"/>
+					<note id="8"/>
+					<note id="7"/>
+					<note id="6"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="4" width="824" height="375" title="Trefoil Knot" error="0" map_phis="50">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[Some songs hide a bonus, that you gain when you complete the song.]]></text>
+				</message_start>
+				<sequence time="9.9">
+					<note id="18"/>
+					<note id="19"/>
+					<note id="20"/>
+					<note id="21"/>
+					<note id="16"/>
+					<note id="10"/>
+					<note id="9"/>
+					<note id="14"/>
+					<note id="13"/>
+					<note id="7"/>
+					<note id="2"/>
+					<note id="3"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="11"/>
+					<note id="17"/>
+					<note id="23"/>
+					<note id="22"/>
+					<note id="15"/>
+					<note id="8"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="6"/>
+					<note id="12"/>
+					<note id="18"/>
+				</sequence>
+			</map>
+		</level>
+		<level title="Smileys" star="STAR2" sound="Star2" color="0xF6E319">
+			<map cols="4" rows="4" width="500" height="400" title="Happy">
+				<message_start>
+					<title><![CDATA[level 3: smileys]]></title>
+					<text><![CDATA[Watch out! From now onward, If you have a mistake, the clock will take away some seconds.]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[:-D]]></title>
+					<text><![CDATA[;-)]]></text>
+				</message_end>
+				<sequence>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="6" follow="false"/>
+					<note id="2"/>
+					<note id="11" follow="false"/>
+					<note id="14"/>
+					<note id="13"/>
+					<note id="8"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="4" width="500" height="400" title="Frown">
+				<sequence>
+					<note id="5"/>
+					<note id="4"/>
+					<note id="6" follow="false"/>
+					<note id="7"/>
+					<note id="15" follow="false"/>
+					<note id="10"/>
+					<note id="9"/>
+					<note id="12"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="4" width="500" height="400" title="LOL">
+				<message_start>
+					<title><![CDATA[Hint]]></title>
+					<text><![CDATA[Note that in order to complete this song, you need to draw the mouth skipping some stars.]]></text>
+				</message_start>
+				<sequence>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="6" follow="false"/>
+					<note id="2"/>
+					<note id="11" follow="false"/>
+					<note id="8"/>
+					<note id="13"/>
+					<note id="14"/>
+					<note id="11"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="4" width="400" height="400" title="Tongue out">
+				<sequence>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="6" follow="false"/>
+					<note id="2"/>
+					<note id="10" follow="false"/>
+					<note id="14"/>
+					<note id="15"/>
+					<note id="11"/>
+					<note id="10"/>
+					<note id="9"/>
+					<note id="8"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="4" width="400" height="400" title="Surprise">
+				<sequence>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="2" follow="false"/>
+					<note id="6"/>
+					<note id="11" follow="false"/>
+					<note id="15"/>
+					<note id="12"/>
+					<note id="8"/>
+					<note id="11"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="4" width="400" height="400" title="Sarcastic">
+				<sequence>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="2" follow="false"/>
+					<note id="6"/>
+					<note id="11" follow="false"/>
+					<note id="15"/>
+					<note id="8"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="700" height="400" title="Angry">
+				<sequence>
+					<note id="3"/>
+					<note id="7"/>
+					<note id="1"/>
+					<note id="6" follow="false"/>
+					<note id="11"/>
+					<note id="13" follow="false"/>
+					<note id="8"/>
+					<note id="24" follow="false"/>
+					<note id="18"/>
+					<note id="17"/>
+					<note id="16"/>
+					<note id="20"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="700" height="400" title="Angel" map_phis="100">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[If you complete this song you will get a bonus from heaven ;)]]></text>
+				</message_start>
+				<sequence tempo=".3" time="5">
+					<note id="2"/>
+					<note id="5"/>
+					<note id="12"/>
+					<note id="9"/>
+					<note id="2"/>
+					<note id="11" follow="false"/>
+					<note id="10"/>
+					<note id="13" follow="false"/>
+					<note id="14"/>
+					<note id="19" follow="false"/>
+					<note id="23"/>
+					<note id="22"/>
+					<note id="21"/>
+					<note id="15"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="700" height="400" title="Evil">
+				<sequence>
+					<note id="0"/>
+					<note id="6"/>
+					<note id="12"/>
+					<note id="8"/>
+					<note id="4"/>
+					<note id="14" follow="false"/>
+					<note id="13"/>
+					<note id="11" follow="false"/>
+					<note id="10"/>
+					<note id="15" follow="false"/>
+					<note id="21"/>
+					<note id="22"/>
+					<note id="23"/>
+					<note id="19"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="700" height="400" title="Kiss">
+				<sequence time="7">
+					<note id="6"/>
+					<note id="1"/>
+					<note id="3" follow="false"/>
+					<note id="8"/>
+					<note id="13" follow="false"/>
+					<note id="17"/>
+					<note id="21"/>
+					<note id="16" follow="false"/>
+					<note id="17"/>
+					<note id="18"/>
+					<note id="23" follow="false"/>
+					<note id="17"/>
+					<note id="11"/>
+					<note id="12" follow="false"/>
+					<note id="17"/>
+					<note id="22"/>
+				</sequence>
+			</map>
+		</level>		
+		<level title="Letters" tempo=".3" time_plus="1.5" star="STAR3" sound="Star3" color="0xF7EE15">
+			<map cols="3" rows="3" width="350" height="350" title="A">
+				<message_start>
+					<title><![CDATA[level 4: letters]]></title>
+					<text><![CDATA[The song will go a litter faster. Focus on the stars and no forget any note!]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[amazing!]]></title>
+					<text><![CDATA[Let's go and complete the level!]]></text>
+				</message_end>
+				<sequence>
+					<note id="6"/>
+					<note id="0" tempo=".5"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="8" tempo=".5"/>
+					<note id="5" tempo=".4" follow="false"/>
+					<note id="4"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="B">
+				<sequence>
+					<note id="4"/>
+					<note id="3"/>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="4"/>
+					<note id="8"/>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="E">
+				<sequence>
+					<note id="3"/>
+					<note id="6"/>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="3" tempo=".4" follow="false"/>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="4" tempo=".4" follow="false"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="F">
+				<sequence>
+					<note id="6"/>
+					<note id="3"/>
+					<note id="4"/>
+					<note id="2" tempo=".4" follow="false"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="G">
+				<sequence>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="8"/>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="3"/>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="2"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="H">
+				<sequence>
+					<note id="2"/>
+					<note id="5"/>
+					<note id="4"/>
+					<note id="3"/>
+					<note id="6"/>
+					<note id="0" tempo=".4" follow="false"/>
+					<note id="3"/>
+					<note id="8" tempo=".4" follow="false"/>
+					<note id="5"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="K">
+				<sequence>
+					<note id="0"/>
+					<note id="6" tempo=".5"/>
+					<note id="8" tempo=".4" follow="false"/>
+					<note id="4"/>
+					<note id="2"/>
+					<note id="3" tempo=".4" follow="false"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="M">
+				<sequence>
+					<note id="4"/>
+					<note id="0"/>
+					<note id="6" tempo=".5"/>
+					<note id="4" tempo=".4" follow="false"/>
+					<note id="2"/>
+					<note id="8" tempo=".5"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="R" map_phis="100">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[This letter comes with little prize...]]></text>
+				</message_start>
+				<sequence>
+					<note id="4"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="6" tempo=".5"/>
+					<note id="8" tempo=".4" follow="false"/>
+					<note id="4"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="350" height="350" title="S">
+				<sequence tempo=".2">
+					<note id="2"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="3"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="8"/>
+					<note id="7"/>
+					<note id="6"/>
+				</sequence>
+			</map>
+		</level>
+		<level title="Numbers" tempo=".2" star="STAR4" sound="Star4" color="0xF7F314">
+			<map cols="1" rows="5" width="300" height="400" title="One">
+				<message_start>
+					<title><![CDATA[level 5: numbers]]></title>
+					<text><![CDATA[Only for pros! You think you can complete these songs?]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[Good!]]></title>
+					<text><![CDATA[This is child's play for you!]]></text>
+				</message_end>
+				<sequence>
+					<note id="0"/>
+					<note id="2"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Two">
+				<sequence>
+					<note id="5"/>
+					<note id="4"/>
+					<note id="2"/>
+					<note id="3"/>
+					<note id="1"/>
+					<note id="0"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Three">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[If you make a mistake, you will not able to complete the song within the time allotted.]]></text>
+				</message_start>
+				<sequence>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="4"/>
+					<note id="2" follow="false"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Four">
+				<sequence>
+					<note id="5"/>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="0"/>
+					<note id="1" follow="false"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Five">
+				<sequence>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="3" follow="false"/>
+					<note id="5"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Six">
+				<sequence>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="3"/>
+					<note id="2"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Seven">
+				<sequence>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Eight">
+				<sequence>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="4"/>
+					<note id="2"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Nine">
+				<sequence>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="2"/>
+					<note id="3"/>
+				</sequence>
+			</map>
+			<map cols="2" rows="3" width="300" height="400" title="Ten">
+				<sequence>
+					<note id="3"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="2"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="3"/>
+					<note id="4" follow="false"/>
+					<note id="1"/>
+				</sequence>
+				<message_end>
+					<title><![CDATA[level complete!]]></title>
+					<text><![CDATA[Draw your own songs in the <font color="#FFCC00">Free Mode!</font> A new button has been added in the main menu.]]></text>
+				</message_end>
+				<award>freeMode</award>
+			</map>
+		</level>
+		<level title="Furniture" tempo=".2" time_plus="4" star="STAR5" sound="Star5" color="0xF7F314">
+			<map cols="4" rows="4" width="600" height="350" title="Table">
+				<message_start>
+					<title><![CDATA[level 6: furniture]]></title>
+					<text><![CDATA[A little more complex songs. Don't forget the order of the shining stars!]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[Excellent!]]></title>
+					<text><![CDATA[If you have mastered this song, you can beat the rest.]]></text>
+				</message_end>
+				<sequence>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="6"/>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="4"/>
+					<note id="8"/>
+					<note id="12"/>
+					<note id="6" follow="false"/>
+					<note id="10"/>
+					<note id="14"/>
+					<note id="3" follow="false"/>
+					<note id="7"/>
+					<note id="11"/>
+					<note id="5" follow="false"/>
+					<note id="9"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="5" width="300" height="400" title="Chair">
+				<sequence>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="7"/>
+					<note id="9"/>
+					<note id="10"/>
+					<note id="8"/>
+					<note id="11"/>
+					<note id="13" follow="false"/>
+					<note id="10"/>
+					<note id="9" follow="false"/>
+					<note id="12"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="4" width="350" height="400" title="Table Lamp">
+				<sequence>
+					<note id="9"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="3"/>
+					<note id="9"/>
+					<note id="7" follow="false"/>
+					<note id="12"/>
+					<note id="17"/>
+					<note id="18" follow="false"/>
+					<note id="16"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="4" width="824" height="300" title="Bed">
+				<sequence>
+					<note id="2"/>
+					<note id="4"/>
+					<note id="3"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="5"/>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="3"/>
+					<note id="6" follow="false"/>
+					<note id="9"/>
+					<note id="4" follow="false"/>
+					<note id="7"/>
+					<note id="10"/>
+					<note id="5" follow="false"/>
+					<note id="8"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="4" width="700" height="400" title="Window">
+				<sequence time="8">
+					<note id="3"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="15"/>
+					<note id="11"/>
+					<note id="13"/>
+					<note id="19"/>
+					<note id="9"/>
+					<note id="3"/>
+					<note id="8"/>
+					<note id="13"/>
+					<note id="8" follow="false"/>
+					<note id="14"/>
+					<note id="11" follow="false"/>
+					<note id="6"/>
+					<note id="1"/>
+					<note id="6" follow="false"/>
+					<note id="10"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="400" height="400" title="Pedestal Lamp">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[This lamp skip some stars. Pay attention!]]></text>
+				</message_start>
+				<sequence>
+					<note id="22"/>
+					<note id="24"/>
+					<note id="23" follow="false"/>
+					<note id="13"/>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="6"/>
+					<note id="7"/>
+					<note id="1"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="500" height="400" title="Clock">
+				<sequence>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="15"/>
+					<note id="21"/>
+					<note id="23"/>
+					<note id="19"/>
+					<note id="9"/>
+					<note id="3"/>
+					<note id="1"/>
+					<note id="12" follow="false"/>
+					<note id="2"/>
+					<note id="12" follow="false"/>
+					<note id="8"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="700" height="400" title="Stairs">
+				<sequence tempo=".3">
+					<note id="15"/>
+					<note id="16"/>
+					<note id="11"/>
+					<note id="12"/>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="23"/>
+					<note id="20"/>
+					<note id="15"/>
+					<note id="11"/>
+					<note id="7"/>
+					<note id="3"/>
+					<note id="4"/>
+					<note id="19"/>
+					<note id="23"/>
+					<note id="8" follow="false"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="450" height="450" title="Painting">
+				<sequence>
+					<note id="4"/>
+					<note id="0"/>
+					<note id="20"/>
+					<note id="24"/>
+					<note id="4"/>
+					<note id="8" follow="false"/>
+					<note id="6"/>
+					<note id="16"/>
+					<note id="18"/>
+					<note id="8"/>
+					<note id="4"/>
+					<note id="6" follow="false"/>
+					<note id="0"/>
+					<note id="16" follow="false"/>
+					<note id="20"/>
+					<note id="18" follow="false"/>
+					<note id="24"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="824" height="450" title="Wardrobe" map_phis="200">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[That's a hard one. If you complete this song, you will get extra phis!]]></text>
+				</message_start>
+				<sequence tempo=".3">
+					<note id="5"/>
+					<note id="10"/>
+					<note id="28"/>
+					<note id="23"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="6"/>
+					<note id="10"/>
+					<note id="28" follow="false"/>
+					<note id="24"/>
+					<note id="6"/>
+					<note id="8" follow="false"/>
+					<note id="26"/>
+					<note id="22" follow="false"/>
+					<note id="20"/>
+					<note id="15"/>
+					<note id="16" follow="false"/>
+					<note id="14"/>
+					<note id="9"/>
+				</sequence>
+			</map>
+		</level>
+		<level title="Zodiacal Signs" star="STAR6" sound="Star6" color="0xF7EE15">
+			<map cols="5" rows="4" width="500" height="400" title="Aries">
+				<message_start>
+					<title><![CDATA[level 7: Zodiacal Signs]]></title>
+					<text><![CDATA[Explore the sky and the reveal the 12 signs of the Zodiac.]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[sign complete!]]></title>
+					<text><![CDATA[Aries salutes you, and ask you for help to find her brothers.]]></text>
+				</message_end>
+				<sequence>
+					<note id="17"/>
+					<note id="12"/>
+					<note id="7"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="5"/>
+					<note id="7" follow="false"/>
+					<note id="3"/>
+					<note id="4"/>
+					<note id="9"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="700" height="400" title="Taurus">
+				<sequence>
+					<note id="26"/>
+					<note id="19"/>
+					<note id="13"/>
+					<note id="8"/>
+					<note id="9"/>
+					<note id="16"/>
+					<note id="22"/>
+					<note id="27"/>
+					<note id="26"/>
+					<note id="9" follow="false"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="8" follow="false"/>
+					<note id="1"/>
+					<note id="0"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="2" width="500" height="400" title="Gemini">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[Pay attention to Gemini, it will draw two lines that will pass each other half way.]]></text>
+				</message_start>
+				<sequence>
+					<note id="0"/>
+					<note id="2"/>
+					<note id="6"/>
+					<note id="4"/>
+					<note id="3" follow="false"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="7"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="3" width="500" height="350" title="Cancer">
+				<sequence>
+					<note id="8"/>
+					<note id="9"/>
+					<note id="11"/>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="10"/>
+					<note id="3" follow="false"/>
+					<note id="2"/>
+					<note id="0"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="1"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="5" width="500" height="400" title="Leo" map_phis="100">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[Leo is a fast animal. If you can beat him, you will get a bonus!]]></text>
+				</message_start>
+				<sequence tempo=".2" time="2.2">
+					<note id="9"/>
+					<note id="8"/>
+					<note id="12"/>
+					<note id="13"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="6"/>
+					<note id="14"/>
+					<note id="18"/>
+					<note id="19"/>
+					<note id="15"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="5" width="500" height="400" title="Virgo">
+				<sequence>
+					<note id="0"/>
+					<note id="12"/>
+					<note id="4" follow="false"/>
+					<note id="1"/>
+					<note id="13"/>
+					<note id="5" follow="false"/>
+					<note id="2"/>
+					<note id="18"/>
+					<note id="6" follow="false"/>
+					<note id="11"/>
+					<note id="14"/>
+					<note id="17"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="3" width="500" height="300" title="Libra">
+				<sequence>
+					<note id="8"/>
+					<note id="9"/>
+					<note id="10"/>
+					<note id="11"/>
+					<note id="7" follow="false"/>
+					<note id="6"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="5" width="500" height="400" title="Scorpio">
+				<sequence>
+					<note id="19"/>
+					<note id="18"/>
+					<note id="2"/>
+					<note id="5"/>
+					<note id="13" follow="false"/>
+					<note id="1"/>
+					<note id="4"/>
+					<note id="12" follow="false"/>
+					<note id="0"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="400" height="400" title="Sagittarius">
+				<sequence>
+					<note id="3"/>
+					<note id="7"/>
+					<note id="1" follow="false"/>
+					<note id="2"/>
+					<note id="5"/>
+					<note id="6" follow="false"/>
+					<note id="4"/>
+					<note id="2"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="5" width="300" height="400" title="Capricorn">
+				<sequence>
+					<note id="0"/>
+					<note id="6"/>
+					<note id="1"/>
+					<note id="10"/>
+					<note id="11"/>
+					<note id="8"/>
+					<note id="10"/>
+					<note id="12"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="4" width="824" height="400" title="Aquarius">
+				<sequence>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="6"/>
+					<note id="2"/>
+					<note id="7"/>
+					<note id="3"/>
+					<note id="8"/>
+					<note id="4"/>
+					<note id="9"/>
+					<note id="19" tempo=".3" follow="false"/>
+					<note id="14" tempo=".3"/>
+					<note id="18" tempo=".3"/>
+					<note id="13" tempo=".3"/>
+					<note id="17" tempo=".3"/>
+					<note id="12" tempo=".3"/>
+					<note id="16" tempo=".3"/>
+					<note id="11" tempo=".3"/>
+					<note id="15" tempo=".3"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="5" width="500" height="400" title="Pisces">
+				<sequence>
+					<note id="0"/>
+					<note id="5"/>
+					<note id="13"/>
+					<note id="16"/>
+					<note id="19" follow="false"/>
+					<note id="14"/>
+					<note id="6"/>
+					<note id="3"/>
+					<note id="11" tempo=".3" follow="false"/>
+					<note id="10" tempo=".2"/>
+					<note id="9" tempo=".2"/>
+					<note id="8" tempo=".2"/>
+				</sequence>
+				<message_end>
+					<title><![CDATA[level complete!]]></title>
+					<text><![CDATA[Now you can change <font color="#FFCC00">the size of the light beam</font> in the Options screen.]]></text>
+				</message_end>
+				<award>beamSize</award>
+			</map>
+		</level>
+		<level title="Constellations" star="STAR7" sound="Star7" color="0xF6E319">
+			<map cols="6" rows="5" width="700" height="425" title="Pegasus">
+				<message_start>
+					<title><![CDATA[level 8: Constellations]]></title>
+					<text><![CDATA[From acient times they guide the travelers. Now these constellations will guide your finger!]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[sign complete!]]></title>
+					<text><![CDATA[Go on with this level and have a nice journey!]]></text>
+				</message_end>
+				<sequence>
+					<note id="9"/>
+					<note id="21"/>
+					<note id="23"/>
+					<note id="11"/>
+					<note id="9"/>
+					<note id="8"/>
+					<note id="1"/>
+					<note id="6"/>
+					<note id="21" follow="false"/>
+					<note id="14"/>
+					<note id="19"/>
+					<note id="21" follow="false"/>
+					<note id="26"/>
+					<note id="25"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="3" width="700" height="350" title="Ursa Major">
+				<sequence>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="8"/>
+					<note id="9"/>
+					<note id="15"/>
+					<note id="16"/>
+					<note id="11"/>
+					<note id="9"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="3" width="500" height="400" title="Orion">
+				<sequence>
+					<note id="8"/>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="10" follow="false"/>
+					<note id="6"/>
+					<note id="0"/>
+					<note id="4" follow="false"/>
+					<note id="8"/>
+					<note id="14"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="5" width="550" height="425" title="Hercules">
+				<sequence>
+					<note id="9"/>
+					<note id="10"/>
+					<note id="14"/>
+					<note id="13"/>
+					<note id="9"/>
+					<note id="5"/>
+					<note id="0"/>
+					<note id="10" follow="false"/>
+					<note id="6"/>
+					<note id="7"/>
+					<note id="14" follow="false"/>
+					<note id="11"/>
+					<note id="19"/>
+					<note id="13" follow="false"/>
+					<note id="17"/>
+					<note id="16"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="4" width="600" height="400" title="Vela">
+				<sequence>
+					<note id="15"/>
+					<note id="11"/>
+					<note id="2"/>
+					<note id="9"/>
+					<note id="13"/>
+					<note id="11"/>
+					<note id="2" follow="false"/>
+					<note id="13"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="750" height="400" title="Scorpius">
+				<sequence>
+					<note id="15"/>
+					<note id="20"/>
+					<note id="21"/>
+					<note id="17"/>
+					<note id="12"/>
+					<note id="8"/>
+					<note id="4" follow="false"/>
+					<note id="3"/>
+					<note id="8"/>
+					<note id="14"/>
+					<note id="9"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="824" height="400" title="Draco">
+				<sequence>
+					<note id="23"/>
+					<note id="28"/>
+					<note id="27"/>
+					<note id="20"/>
+					<note id="14"/>
+					<note id="8"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="6"/>
+					<note id="7"/>
+					<note id="1"/>
+					<note id="2" follow="false"/>
+					<note id="3"/>
+					<note id="8" follow="false"/>
+					<note id="15"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="5" width="700" height="400" title="Centaurus">
+				<sequence>
+					<note id="19"/>
+					<note id="14"/>
+					<note id="9"/>
+					<note id="4"/>
+					<note id="1"/>
+					<note id="6"/>
+					<note id="9"/>
+					<note id="13"/>
+					<note id="16"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="824" height="400" title="Lupus">
+				<sequence>
+					<note id="4"/>
+					<note id="10"/>
+					<note id="11"/>
+					<note id="4"/>
+					<note id="9"/>
+					<note id="8"/>
+					<note id="1"/>
+					<note id="13"/>
+					<note id="20"/>
+					<note id="15"/>
+					<note id="9"/>
+					<note id="15" follow="false"/>
+					<note id="22"/>
+					<note id="28"/>
+					<note id="1" follow="false"/>
+					<note id="6"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="700" height="450" title="Perseus" map_phis="200">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[Perseus, son of Zeus, will reward you with 200 phis if you can complete his constellation.]]></text>
+				</message_start>
+				<sequence>
+					<note id="25"/>
+					<note id="19"/>
+					<note id="14"/>
+					<note id="8"/>
+					<note id="3"/>
+					<note id="9"/>
+					<note id="15"/>
+					<note id="21"/>
+					<note id="28"/>
+					<note id="1" follow="false"/>
+					<note id="6"/>
+					<note id="13"/>
+					<note id="14"/>
+					<note id="15"/>
+					<note id="16"/>
+					<note id="11"/>
+					<note id="9" follow="false"/>
+					<note id="8"/>
+					<note id="19" follow="false"/>
+					<note id="21"/>
+				</sequence>
+			</map>
+		</level>
+		<level title="Kid's Stuff" star="STAR8" sound="Star8" color="0xF5D71B">
+			<map cols="5" rows="5" width="600" height="400" title="House">
+				<message_start>
+					<title><![CDATA[level 9: kid's stuff]]></title>
+					<text><![CDATA[A little boy has made some drawings to you. Are you ready?]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[nice!]]></title>
+					<text><![CDATA[Go and complete these beautiful drawings.]]></text>
+				</message_end>
+				<sequence>
+					<note id="10"/>
+					<note id="20"/>
+					<note id="24" tempo=".8"/>
+					<note id="14"/>
+					<note id="2"/>
+					<note id="10"/>
+					<note id="14" tempo=".8"/>
+					<note id="4" tempo=".2"/>
+					<note id="3" tempo=".2"/>
+					<note id="8" tempo=".2"/>
+					<note id="21" tempo=".2" follow="false"/>
+					<note id="16" tempo="1.5"/>
+					<note id="18" tempo=".2"/>
+					<note id="23" tempo=".2"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="5" width="300" height="400" title="Mommy">
+				<sequence>
+					<note id="4"/>
+					<note id="3"/>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="4" tempo=".2"/>
+					<note id="7" tempo=".2"/>
+					<note id="12"/>
+					<note id="14"/>
+					<note id="7"/>
+					<note id="8" follow="false"/>
+					<note id="6" tempo=".8"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="600" height="400" title="Tent">
+				<sequence>
+					<note id="2"/>
+					<note id="11"/>
+					<note id="20"/>
+					<note id="22"/>
+					<note id="24"/>
+					<note id="13"/>
+					<note id="2"/>
+					<note id="21" tempo="1" follow="false"/>
+					<note id="12" tempo=".2"/>
+					<note id="23" tempo=".2"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="550" height="450" title="Sun">
+				<sequence>
+					<note id="6" tempo=".4"/>
+					<note id="16" tempo=".4"/>
+					<note id="18" tempo=".4"/>
+					<note id="8" tempo=".4"/>
+					<note id="6" tempo=".4"/>
+					<note id="7" follow="false"/>
+					<note id="2" tempo=".3"/>
+					<note id="11" follow="false"/>
+					<note id="10" tempo=".3"/>
+					<note id="17" follow="false"/>
+					<note id="22" tempo=".3"/>
+					<note id="13" follow="false"/>
+					<note id="14" tempo=".3"/>
+					<note id="8" follow="false"/>
+					<note id="4" tempo=".3"/>
+					<note id="6" follow="false"/>
+					<note id="0" tempo=".2"/>
+					<note id="16" follow="false"/>
+					<note id="20" tempo=".2"/>
+					<note id="18" follow="false"/>
+					<note id="24" tempo=".2"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="5" width="400" height="400" title="Flower">
+				<sequence>
+					<note id="5"/>
+					<note id="13"/>
+					<note id="14"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="5"/>
+					<note id="10"/>
+					<note id="11"/>
+					<note id="7"/>
+					<note id="4"/>
+					<note id="8"/>
+					<note id="9"/>
+					<note id="10"/>
+					<note id="6" tempo=".3" follow="false"/>
+					<note id="9"/>
+					<note id="12"/>
+					<note id="16"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="3" width="800" height="350" title="Hat or Elephant?" map_phis="100">
+				<message_start>
+					<title><![CDATA[hint]]></title>
+					<text><![CDATA[It's a hat or a boa with an elephant in its stomach? If you can resolve it, the Little Prince will give you a present.]]></text>
+				</message_start>
+				<sequence time="3">
+					<note id="10"/>
+					<note id="12"/>
+					<note id="14"/>
+					<note id="13" tempo=".3" follow="false"/>
+					<note id="8"/>
+					<note id="3"/>
+					<note id="1"/>
+					<note id="6"/>
+					<note id="11"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="5" width="500" height="400" title="Tree">
+				<sequence>
+					<note id="1"/>
+					<note id="3"/>
+					<note id="4"/>
+					<note id="6"/>
+					<note id="7"/>
+					<note id="9"/>
+					<note id="10"/>
+					<note id="11" tempo=".3"/>
+					<note id="7" tempo=".3"/>
+					<note id="8" tempo=".3"/>
+					<note id="4" tempo=".3"/>
+					<note id="5" tempo=".3"/>
+					<note id="1" tempo=".3"/>
+					<note id="10" tempo=".5" follow="false"/>
+					<note id="13" tempo=".3"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="4" width="824" height="350" title="Car">
+				<sequence>
+					<note id="11" follow="false"/>
+					<note id="4"/>
+					<note id="2"/>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="12"/>
+					<note id="17"/>
+					<note id="11"/>
+					<note id="7" follow="false"/>
+					<note id="11"/>
+					<note id="3" follow="false"/>
+					<note id="9"/>
+					<note id="13" follow="false"/>
+					<note id="19" tempo=".3"/>
+					<note id="20" tempo=".3"/>
+					<note id="14" tempo=".3"/>
+					<note id="15" tempo=".3" follow="false"/>
+					<note id="21" tempo=".3"/>
+					<note id="22" tempo=".3"/>
+					<note id="16" tempo=".3"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="5" width="300" height="400" title="Daddy">
+				<sequence tempo=".3">
+					<note id="4"/>
+					<note id="5"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="10" tempo=".6"/>
+					<note id="12"/>
+					<note id="10" follow="false"/>
+					<note id="14"/>
+					<note id="8" follow="false"/>
+					<note id="6"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="824" height="300" title="Spider">
+				<sequence tempo=".3">
+					<note id="7"/>
+					<note id="14" tempo=".4"/>
+					<note id="15" tempo=".4"/>
+					<note id="10" tempo=".4"/>
+					<note id="3" tempo=".4"/>
+					<note id="2" tempo=".4"/>
+					<note id="7" tempo=".4"/>
+					<note id="12" tempo=".4"/>
+					<note id="18" tempo=".4"/>
+					<note id="14" follow="false"/>
+					<note id="19"/>
+					<note id="25"/>
+					<note id="14" follow="false"/>
+					<note id="20"/>
+					<note id="26"/>
+					<note id="15" follow="false"/>
+					<note id="21"/>
+					<note id="27"/>
+					<note id="15" follow="false"/>
+					<note id="22"/>
+					<note id="28"/>
+					<note id="10" follow="false"/>
+					<note id="17"/>
+					<note id="23"/>
+				</sequence>
+			</map>
+		</level>
+		<level title="Madness" tempo=".3" star="STAR9" sound="Star9" color="0xE64FF7">
+			<map cols="5" rows="5" width="550" height="400" title="Spiral" map_phis="100">
+				<message_start>
+					<title><![CDATA[level 10: madness]]></title>
+					<text><![CDATA[You have gone far enough. But you need to move faster to defeat the last 10 songs!]]></text>
+				</message_start>
+				<message_end>
+					<title><![CDATA[impressive!]]></title>
+					<text><![CDATA[I have underestimate you. Go and complete the game!]]></text>
+				</message_end>
+				<sequence>
+					<note id="12"/>
+					<note id="13"/>
+					<note id="18"/>
+					<note id="16"/>
+					<note id="6"/>
+					<note id="9"/>
+					<note id="19"/>
+					<note id="24"/>
+					<note id="22"/>
+					<note id="20"/>
+					<note id="10"/>
+					<note id="0"/>
+					<note id="2"/>
+					<note id="4"/>
+				</sequence>
+			</map>
+			<map cols="4" rows="4" width="550" height="400" title="Grid" map_phis="100">
+				<sequence time="9.4">
+					<note id="0"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="5" follow="false"/>
+					<note id="6"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="6" follow="false"/>
+					<note id="7"/>
+					<note id="3"/>
+					<note id="2"/>
+					<note id="7" follow="false"/>
+					<note id="11"/>
+					<note id="10"/>
+					<note id="6"/>
+					<note id="10" follow="false"/>
+					<note id="9"/>
+					<note id="5"/>
+					<note id="9" follow="false"/>
+					<note id="8"/>
+					<note id="4"/>
+					<note id="8" follow="false"/>
+					<note id="12"/>
+					<note id="13"/>
+					<note id="9"/>
+					<note id="13" follow="false"/>
+					<note id="14"/>
+					<note id="10"/>
+					<note id="14" follow="false"/>
+					<note id="15"/>
+					<note id="11"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="600" height="400" title="Target" map_phis="100">
+				<sequence>
+					<note id="3"/>
+					<note id="1"/>
+					<note id="7"/>
+					<note id="3"/>
+					<note id="17" follow="false"/>
+					<note id="21"/>
+					<note id="23"/>
+					<note id="17"/>
+					<note id="9" follow="false"/>
+					<note id="13"/>
+					<note id="19"/>
+					<note id="9"/>
+					<note id="5" follow="false"/>
+					<note id="15"/>
+					<note id="11"/>
+					<note id="5"/>
+					<note id="7" follow="false"/>
+					<note id="12"/>
+					<note id="17"/>
+					<note id="11" follow="false"/>
+					<note id="12"/>
+					<note id="13"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="600" height="400" title="Domo-kun" map_phis="100">
+				<sequence>
+					<note id="0"/>
+					<note id="5"/>
+					<note id="29"/>
+					<note id="24"/>
+					<note id="0"/>
+					<note id="7" follow="false"/>
+					<note id="8"/>
+					<note id="14"/>
+					<note id="13"/>
+					<note id="7"/>
+					<note id="9" follow="false"/>
+					<note id="10"/>
+					<note id="16"/>
+					<note id="15"/>
+					<note id="9"/>
+					<note id="23" follow="false"/>
+					<note id="18"/>
+					<note id="19" follow="false"/>
+					<note id="25"/>
+					<note id="26" follow="false"/>
+					<note id="20"/>
+					<note id="21" follow="false"/>
+					<note id="27"/>
+					<note id="28" follow="false"/>
+					<note id="22"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="700" height="400" title="Diamond" map_phis="100">
+				<sequence>
+					<note id="2"/>
+					<note id="22"/>
+					<note id="6"/>
+					<note id="2"/>
+					<note id="8"/>
+					<note id="22"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="2"/>
+					<note id="3"/>
+					<note id="9"/>
+					<note id="22"/>
+					<note id="5" follow="false"/>
+					<note id="6"/>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="9"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="824" height="400" title="Yoda" map_phis="100">
+				<sequence>
+					<note id="7"/>
+					<note id="6"/>
+					<note id="12"/>
+					<note id="7"/>
+					<note id="2"/>
+					<note id="3"/>
+					<note id="10"/>
+					<note id="17"/>
+					<note id="11"/>
+					<note id="10"/>
+					<note id="15"/>
+					<note id="14"/>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="9" follow="false"/>
+					<note id="10"/>
+					<note id="16"/>
+					<note id="22"/>
+					<note id="28"/>
+					<note id="25" follow="false"/>
+					<note id="19"/>
+					<note id="13"/>
+					<note id="7"/>
+					<note id="15" follow="false"/>
+					<note id="20"/>
+					<note id="26"/>
+				</sequence>
+			</map>
+			<map cols="5" rows="5" width="750" height="400" title="Parthenon" map_phis="100">
+				<sequence>
+					<note id="15"/>
+					<note id="5"/>
+					<note id="6"/>
+					<note id="16"/>
+					<note id="17"/>
+					<note id="7"/>
+					<note id="8"/>
+					<note id="18"/>
+					<note id="19"/>
+					<note id="9"/>
+					<note id="2"/>
+					<note id="5"/>
+					<note id="6" follow="false"/>
+					<note id="7"/>
+					<note id="8" follow="false"/>
+					<note id="9"/>
+					<note id="19" follow="false"/>
+					<note id="24"/>
+					<note id="20"/>
+					<note id="15"/>
+					<note id="16"/>
+					<note id="17" follow="false"/>
+					<note id="18"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="5" width="750" height="400" title="Bond's Gun" map_phis="100">
+				<sequence>
+					<note id="20"/>
+					<note id="14"/>
+					<note id="15"/>
+					<note id="21"/>
+					<note id="20"/>
+					<note id="15"/>
+					<note id="16"/>
+					<note id="11"/>
+					<note id="6"/>
+					<note id="12"/>
+					<note id="13"/>
+					<note id="7"/>
+					<note id="16" follow="false"/>
+					<note id="28"/>
+					<note id="27"/>
+					<note id="21"/>
+					<note id="14" follow="false"/>
+					<note id="13"/>
+				</sequence>
+			</map>
+			<map cols="3" rows="3" width="400" height="400" title="Web" map_phis="100">
+				<sequence time="10">
+					<note id="7"/>
+					<note id="5"/>
+					<note id="1"/>
+					<note id="3"/>
+					<note id="7"/>
+					<note id="1"/>
+					<note id="0"/>
+					<note id="6"/>
+					<note id="8"/>
+					<note id="2"/>
+					<note id="1"/>
+					<note id="3" follow="false"/>
+					<note id="4"/>
+					<note id="5"/>
+					<note id="0"/>
+					<note id="7"/>
+					<note id="2"/>
+					<note id="3"/>
+					<note id="8"/>
+					<note id="1"/>
+					<note id="6"/>
+					<note id="5"/>
+				</sequence>
+			</map>
+			<map cols="6" rows="3" width="824" height="300" title="Chaotic" map_phis="400">
+				<message_end>
+					<title><![CDATA[game complete!]]></title>
+					<text><![CDATA[You have beated all the levels and all the songs.<br><font color="#32beff">Thank you for playing to Star Orchestra.</font>]]></text>
+				</message_end>
+				<sequence>
+					<note id="0"/>
+					<note id="1"/>
+					<note id="7" follow="false"/>
+					<note id="6"/>
+					<note id="12" follow="false"/>
+					<note id="13"/>
+					<note id="14" follow="false"/>
+					<note id="8"/>
+					<note id="2" follow="false"/>
+					<note id="15"/>
+					<note id="9" tempo=".2" follow="false"/>
+					<note id="3"/>
+					<note id="4" tempo=".2" follow="false"/>
+					<note id="11"/>
+					<note id="16"/>
+					<note id="10"/>
+					<note id="4"/>
+					<note id="9" tempo=".2" follow="false"/>
+					<note id="15"/>
+					<note id="8" tempo=".2" follow="false"/>
+					<note id="2"/>
+					<note id="0" tempo=".2" follow="false"/>
+					<note id="6"/>
+					<note id="12"/>
+				</sequence>
+			</map>
+		</level>
+	</levels>
+</game>
