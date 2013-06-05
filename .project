@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Star Orchestra</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.apollobuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexide.project.multiplatform.multiplatformasnature</nature>
+		<nature>com.adobe.flexide.project.multiplatform.multiplatformnature</nature>
+		<nature>com.adobe.flexbuilder.project.apollonature</nature>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<filteredResources>
+		<filter>
+			<id>1338922320093</id>
+			<name>arte</name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.andFilterMatcher</id>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

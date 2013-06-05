@@ -4,9 +4,9 @@ assets/
 bin-debug/
 bin-release/
 
-# Project property files
-.actionScriptProperties
-.flexLibProperties
+# Other files and folders
 .settings/
-.project
-*.png
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
