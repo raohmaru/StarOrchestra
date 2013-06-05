@@ -12,7 +12,6 @@ public final class GameEvent extends Event
 	public static const MAP_ERROR :String = "mapError";
 	public static const GO_HOME :String = "goToHome";
 	public static const LEVEL_SELECT :String = "levelSelect";
-	public static const LOGOUT :String = "logout";
 	
 	public function GameEvent(type :String)
 	{		

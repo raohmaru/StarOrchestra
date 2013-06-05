@@ -2,6 +2,7 @@ package jp.raohmaru.game.starorchestra.ui.screens
 {
 import flash.display.DisplayObject;
 import flash.events.MouseEvent;
+import flash.text.TextField;
 
 import jp.raohmaru.events.Callback;
 import jp.raohmaru.game.starorchestra.core.GameCore;
@@ -36,10 +37,11 @@ public class AbsctractScreen extends GameSprite
 		for(var i :int=0; i<_view.numChildren; i++)
 		{
 			ch = _view.getChildAt(i);
-			if(ch is GlowButton)
-				GlowButton(ch).show(i*.1);
-			else
-				Paprika.add(ch, .3, {autoAlpha:1, scale:1}, Quad.easeOut, i*.1);
+			if(!ch.visible)
+				if(ch is GlowButton)
+					GlowButton(ch).show(i*.1);
+				else
+					Paprika.add(ch, .3, {autoAlpha:1, scale:1}, Quad.easeOut, i*.1);
 		}
 	}
 	
@@ -56,7 +58,7 @@ public class AbsctractScreen extends GameSprite
 				if(ch is GlowButton)
 					GlowButton(ch).hide(i*.05);
 				else
-					Paprika.add(ch, .3, {autoAlpha:0, scale:.7}, Quad.easeOut, i*.05);
+					Paprika.add(ch, .3, {autoAlpha:0, scale:(ch is TextField ? 0 : .7)}, Quad.easeOut, i*.05);
 			}
 			
 			Paprika.wait( this, i*.05, 0, Callback.simple( _core.canvas.removeChild, _view ) );

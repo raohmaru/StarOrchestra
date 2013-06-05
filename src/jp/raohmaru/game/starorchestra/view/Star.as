@@ -1,13 +1,17 @@
 package jp.raohmaru.game.starorchestra.view
 {
+import flash.display.Bitmap;
+import flash.display.BitmapData;
 import flash.display.Sprite;
 import flash.events.MouseEvent;
+import flash.geom.Matrix;
 import flash.geom.Point;
 
 import jp.raohmaru.game.starorchestra.controller.EventMan;
 import jp.raohmaru.game.starorchestra.core.*;
 import jp.raohmaru.game.starorchestra.core.libs.*;
 import jp.raohmaru.game.starorchestra.events.DrawEvent;
+import jp.raohmaru.game.starorchestra.utils.Cache;
 import jp.raohmaru.motion.Paprika;
 import jp.raohmaru.motion.PaprikaSpice;
 import jp.raohmaru.motion.easing.Quad;
@@ -18,6 +22,7 @@ public final class Star extends GameSprite
 	private var _id :int,
 				_sym :Sprite,
 				_sym_ref :String,
+				_bmp :Bitmap,
 				_color :uint,
 				_highlighted :Boolean,
 				_dx :Number = -1,
@@ -35,7 +40,6 @@ public final class Star extends GameSprite
 		_view.alpha = 0;
 		_view.visible = false;
 		_view.scaleX = _view.scaleY = .5;
-		_view.filters = [Filters.GLOW_FILTER];
 		_view.mouseChildren = false;
 		_view.addEventListener(MouseEvent.MOUSE_DOWN, mouseHandler);
 	}
@@ -142,10 +146,31 @@ public final class Star extends GameSprite
 	{
 		var exist_sym :Boolean = (_sym != null);
 		
-		if(exist_sym)
-			_view.removeChild(_sym);
-		_sym = new Symbols[_sym_ref]() as Sprite;
-		_view.addChild(_sym);
+		if(!exist_sym)
+		{
+			_sym = new Sprite();
+			_view.addChild(_sym);
+			_bmp = new Bitmap();
+			_sym.addChild(_bmp);
+		}
+		
+		if(Cache.retrieve(_sym_ref))
+		{
+			var bmd :BitmapData = Cache.retrieve(_sym_ref);
+		}
+		else
+		{
+			var new_sym :Sprite = new Symbols[_sym_ref]() as Sprite;
+				new_sym.filters = [Filters.GLOW_FILTER];
+			bmd = new BitmapData(new_sym.width+Filters.GLOW_FILTER.blurX*2, new_sym.height+Filters.GLOW_FILTER.blurY*2, true, 0);
+			bmd.draw(new_sym, new Matrix(1,0,0,1,Filters.GLOW_FILTER.blurX,Filters.GLOW_FILTER.blurY));
+				
+			Cache.drop(_sym_ref, bmd);
+		}
+		_bmp.bitmapData = bmd;
+		_bmp.smoothing = true;
+		_bmp.x = -bmd.width/2;
+		_bmp.y = -bmd.height/2;
 		
 		if(exist_sym)
 		{

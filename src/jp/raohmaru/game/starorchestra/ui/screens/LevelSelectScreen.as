@@ -83,6 +83,7 @@ public final class LevelSelectScreen extends AbsctractScreen
 			lv_cont.x = 279;
 			lv_cont.y = 273;
 			lv_cont.alpha = 0;
+			lv_cont.visible = false;
 			lv_cont.scaleX = lv_cont.scaleY = .7;
 		_view.addChildAt(lv_cont, 0);
 		

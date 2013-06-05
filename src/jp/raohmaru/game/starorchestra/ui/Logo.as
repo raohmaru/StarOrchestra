@@ -71,6 +71,7 @@ public final class Logo extends GameSprite
 		{
 			_sym.stop();
 			_sym.removeEventListener(Event.ENTER_FRAME, oef);
+			_view.cacheAsBitmap = true;
 		}
 	}
 	

@@ -1,5 +1,6 @@
 package jp.raohmaru.game.starorchestra.ui.screens
 {
+import flash.desktop.NativeApplication;
 import flash.events.MouseEvent;
 
 import jp.raohmaru.game.starorchestra.core.*;
@@ -50,7 +51,7 @@ public final class HomeScreen extends AbsctractScreen
 		_select_bot =	createButton("select level",	"select_bot",	x, y+h*2,		actions);
 						createButton("options",			"options_bot",	x, y+h*3,		actions);
 		//createButton("awards",			"awards_bot",	x, y+h*4,		actions);
-						createButton("logout",			"logout_bot",	x, y+h*4+33,	actions);
+						createButton("exit",			"logout_bot",	x, y+h*4+33,	actions);
 	}
 	
 	private function checkButton(bot :GlowButton, enabled :Boolean) :void
@@ -83,7 +84,7 @@ public final class HomeScreen extends AbsctractScreen
 			trace("Awards");
 			
 		else
-			dispatchEvent(new GameEvent(GameEvent.LOGOUT));
+			NativeApplication.nativeApplication.exit();
 	}
 }
 }

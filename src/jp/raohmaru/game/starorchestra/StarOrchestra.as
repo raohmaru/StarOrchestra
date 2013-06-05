@@ -59,7 +59,6 @@ public class StarOrchestra
 		_start_scr.addEventListener(GameEvent.GO_HOME, goHome);
 		
 		_home_scr = new HomeScreen(_core);
-		_home_scr.addEventListener(GameEvent.LOGOUT, goStart);
 		_home_scr.addEventListener(GameEvent.GAME_START, gameHandler);
 		_home_scr.addEventListener(GameEvent.LEVEL_SELECT, goLevelSelect);
 		
@@ -72,22 +71,13 @@ public class StarOrchestra
 	
 	private function start() :void
 	{
-		_logo.add();
-		_logo.play();
+		Paprika.wait(this, .3, 0, function():void
+		{		
+			_logo.add();
+			_logo.play();
+		});
 		
 		Paprika.wait(this, .8, 0, _start_scr.addAndPlay);
-	}
-	
-	private function goStart(e :GameEvent=null) :void
-	{
-		_core.users.destroy();
-		
-		_home_scr.remove();
-		_header.remove();
-		
-		_start_scr.addAndPlay();
-		
-		_logo.maximize();
 	}
 	
 	private function goHome(e :GameEvent=null) :void
